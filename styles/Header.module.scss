@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+//Desktop version
+
+.header {
+  background-color: $additonalColor;
+  height: 248px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: $wrap-width;
+}
+
+.headerInfo {
+  display: flex;
+  border-bottom: 1px solid white;
+  width: 100vw;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 1260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftPart {
+  display: flex;
+}
+
+.rightPart {
+  text-align: right;
+}
+
+.socialNetworks {
+  display: flex;
+  list-style: none;
+  margin-right: 8px;
+}
+
+.networkItem {
+  margin-right: 9px;
+}
+
+.orderText {
+  margin: 0;
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  b {
+    font-weight: 500;
+  }
+}
+
+//Media Queries
+
+@media screen and (width < 450px) {
+  .headerInfo {
+    display: none;
+  }
+
+  .header {
+    height: 51px;
+  }
+}
+
+@media screen and (width > 450px) {
+  .mobileSearch {
+    display: none;
+  }
+}
+
+// Mobile Version
+
+.mobileSearch {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #B97B14, #E6B226, #FEE186, #D1AB51, #A07119) 1;
+  width: 100%;
+}
