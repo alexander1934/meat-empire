@@ -85,4 +85,26 @@
   border-style: solid;
   border-image: linear-gradient(to right, #B97B14, #E6B226, #FEE186, #D1AB51, #A07119) 1;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mobileInput {
+  background-color: $additonalColor;
+  border: none;
+  height: 30px;
+  outline: none;
+  color: #FFFFFF;
+}
+
+.mobileInput:focus{
+  border: none;
 }

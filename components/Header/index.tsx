@@ -3,7 +3,8 @@ import Image from "next/image";
 import vk from "@/assets/icons/vk-gray.png";
 import odnoklassniki from "@/assets/icons/odnoklassniki-gray.png";
 import whatsapp from "@/assets/icons/whatsapp-gray.png";
-import search from "@/assets/icons/search-gold.png";
+import search from "@/assets/icons/search-gold.svg";
+import phone from "@/assets/icons/phone-gold.svg";
 
 const Header = () => {
     return (
@@ -28,11 +29,13 @@ const Header = () => {
                 </div>
             </div>
             {/*Mobile Menu*/}
-            <div className={s.mobileSearch}>
-                <Image src={search} alt={""} />
-                <input type="text" placeholder={"Поиск по сайту"}/>
-
-            </div>
+                <div className={s.mobileSearch}>
+                    <div className={s.flexWrap}>
+                        <Image src={search} alt={""} />
+                        <input className={s.mobileInput} type="text" placeholder={"Поиск по сайту"}/>
+                        <Image src={phone} alt={""} />
+                    </div>
+                </div>
         </header>)
 }
 
